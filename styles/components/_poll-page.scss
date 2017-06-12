@@ -1,0 +1,145 @@
+.poll-data-box {
+    height: auto;
+    background: #ffffff;
+    border-bottom: 3px solid #20e3b2;
+    text-align: center;
+    margin-top: 5%;
+    padding: 15px 0;
+
+    >h2{
+        position: relative;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        padding: 5px 10px;
+        &:after{
+            content: "\f040";
+            font-family: FontAwesome;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            font-size: 14pt;
+            color: $badge-primary-bg;
+            transition: 0.5s;
+            display: none;
+        }
+        &:hover, &:focus{
+            text-decoration: underline #20E3B2;
+            &:after {
+                display: block;
+            }
+        }
+    }
+    #myChart {
+        height: 500px ;
+        width: 100%;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 25px;
+        margin: 35px 0;
+        overflow: hidden;
+
+        li{
+            width: auto;
+            margin: auto;
+            border: 2px solid #20e3b2;
+            height: 45px;
+            line-height: 40px;
+            box-sizing: border-box;
+            transition: 0.5s;
+            margin-bottom: 15px;
+            position: relative;
+            background: #ffffff;
+            $shadow-color: #20e3b2;
+            box-shadow: 1px 2px 0 $shadow-color, 2px 3px 0 $shadow-color, 3px 4px 0 $shadow-color;
+            cursor: pointer;
+
+
+            label {
+                display: block;
+
+                .custom-control-indicator {
+                    position: absolute;
+                    left: 8.5px;
+                    top: 8.5px;
+                }
+                .custom-control-description {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    font-family: "Open Sans";
+                    font-size: 14pt;
+                    font-weight: 500;
+                }
+                .option-votes{
+                    background: $badge-primary-bg;
+                    color: #fff;
+                    width: auto;
+                    padding: 0 5px;
+                    border-radius: 15%;
+                    line-height: normal;
+                    text-align: center;
+                    position: absolute;
+                    right: 10px;
+                    top: 25%;
+                }
+            }
+
+
+            &:hover {
+                transform: translateY(-5px) scale(1.05) ;
+
+            }
+        }
+    }
+    button {
+        border: 2px solid #20E3B2;
+        padding: 5px 25px;
+        background: #ffffff;
+        position: relative;
+        overflow: hidden;
+        z-index: 0;
+        font-family: "Open Sans";
+        font-weight: bold;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: -100%;
+            background: #20E3B2;
+            transition: 0.5s;
+            color: #fff;
+            text-align: center;
+            line-height: 35px;
+            z-index: -1;
+        }
+        span {
+            z-index: 1;
+        }
+        &:hover {
+            &:before {
+                left: 0;
+                z-index: -1;
+
+            }
+            span {
+                color: #ffffff;
+            }
+        }
+
+    }
+
+}
+.delete {
+    position: fixed;
+    bottom: 25px;
+    border: 2px solid #ffffff;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 1px 3px #898989, 0 -1px 3px #898989;
+}
+
+

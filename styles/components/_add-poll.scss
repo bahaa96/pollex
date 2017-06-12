@@ -1,0 +1,43 @@
+.add-poll{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #c0392b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    font-size: 24pt;
+    font-weight: bold;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    border: 3px solid white;
+    box-shadow: 0 5px 10px #727272;
+    transition: 0.5s;
+    line-height: initial;
+
+    &:hover {
+        box-shadow: 0 5px 10px -3px #898989;
+        transform: translateY(-3px);
+
+    }
+}
+
+#myModal .modal-body {
+    form > div {
+        text-align: center;
+        margin-top: 25px;
+        background: #E9EBEE;
+        padding: 10px 50px;
+        .inputs-group {
+            input[type='text'] {
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        }
+        button {
+            margin: 10px 0;
+            border-width: 2px;
+        }
+    }
+}

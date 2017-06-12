@@ -1,0 +1,39 @@
+.polls-list {
+    .row {
+        margin: 0;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            padding: 10px 5px;
+            background: #fff;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #dddddd;
+            margin-bottom: 5px;
+            border-bottom: 3px solid #dddddd;
+            cursor: pointer;
+            position: relative;
+            .data {
+                display: flex;
+                margin: 2.5px 0;
+                justify-content: space-around;
+                p{
+                    color: darkgray;
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+
+    .no-polls {
+        text-align: center;
+        color: #8e44ad;
+        padding: 35px;
+        background: #fff;
+        box-shadow: 0 1px 0 #20e3b2, 0 3px 0 #20e3b2, 0 3px 0 #20e3b2, ;
+    }
+}

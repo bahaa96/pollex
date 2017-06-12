@@ -1,0 +1,38 @@
+
+.delete-modal-container {
+    display: none;
+    .black-screen {
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.35);
+    }
+    .delete-modal {
+        z-index: 12;
+        padding: 1.5em;
+        background: #ffffff;
+        border: 3px solid #20E3B2;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        i {
+            float: right;
+            cursor: pointer;
+        }
+        h3 {
+            margin: 50px auto;
+
+        }
+        button {
+            margin: 10px;
+            font-size: 14pt;
+            border-width: 2px;
+        }
+    }
+}
