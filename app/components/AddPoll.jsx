@@ -41,6 +41,8 @@ class AddPoll extends React.Component {
         e.preventDefault()
         let input = `<input type="text" class="form-control" placeholder="Write an option"/>`
         $("#myModal").find(".modal-body form .inputs-group").append(input)
+        $("#myModal").find(".modal-body form .inputs-group input:last-child").focus()
+
     }
     render() {
         return (
@@ -59,7 +61,7 @@ class AddPoll extends React.Component {
                                 </button>
                             </div>
                             <div className="modal-body">
-                                <form onSubmit={this.addPoll}>
+                                <form>
                                     <label>Title: </label>
                                     <input type="text" className="form-control" ref={"pollTitle"} placeholder="Poll title"/>
                                     <div>

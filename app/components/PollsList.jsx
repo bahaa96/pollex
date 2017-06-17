@@ -5,7 +5,7 @@ import {connect} from "react-redux"
 import ContentLoader from "ContentLoader"
 
 import "jquery-ui/ui/widgets/sortable"
-import "../../jquery.ui.sortable-animation"
+import "../../public/jquery.ui.sortable-animation"
 
 class PollsList extends React.Component {
     constructor(props){
@@ -13,11 +13,12 @@ class PollsList extends React.Component {
         this.renderPolls = this.renderPolls.bind(this)
     }
     renderPolls(){
-        if (this.props.areTodosLoading){
+        let {areTodosLoading, polls , searchText} = this.props
+        if (areTodosLoading){
             return <ContentLoader/>
         }else {
-            if (this.props.polls.length) {
-                return this.props.polls.map((poll, index) => <Poll key={index} {...poll}/>)
+            if (polls.length) {
+                return polls.filter(el => el.title.includes(searchText)).map((poll, index) => <Poll key={index} {...poll}/>)
             }else {
                 return <h2 className="no-polls">No Polls To show</h2>
             }
@@ -45,7 +46,8 @@ export default connect(
     (state) =>{
         return {
             polls: state.polls,
-            areTodosLoading: state.areTodosLoading
+            areTodosLoading: state.areTodosLoading,
+            searchText: state.searchText
         }
     }
 )(PollsList)

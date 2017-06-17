@@ -6,7 +6,7 @@ import ReallySmoothScroll from 'really-smooth-scroll'
 import Router from "./router/index.jsx"
 import { startAddPolls } from "actions"
 
-import "style-loader!css-loader!sass-loader!../styles/app.scss"
+import "styles/app.scss"
 import 'font-awesome/css/font-awesome.css'
 import "animate.css/animate.min.css"
 

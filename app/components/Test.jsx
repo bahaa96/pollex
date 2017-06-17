@@ -1,5 +1,6 @@
 import React from "react"
 
+
 export default class Test extends React.Component {
     constructor(props){
         super(props)
@@ -13,25 +14,12 @@ export default class Test extends React.Component {
             selectedOption: e.currentTarget.value
         })
     }
+
     render(){
         return (
-            <form>
-                <label>
-                    <input type="radio" value={"apple"} name="option"
-                           checked={this.state.selectedOption === "apple"} onChange={this.optionSelected}/>
-                    Apple
-                </label>
-                <label >
-                    <input type="radio" value={"orange"}  name="option"
-                           checked={this.state.selectedOption === "orange"} onChange={this.optionSelected}/>
-                    Orange
-                </label>
-                <label>
-                    <input type="radio" value={"peach"} name="option"
-                           checked={this.state.selectedOption === "peach"} onChange={this.optionSelected}/>
-                    Peach
-                </label>
-            </form>
+            <h1>
+                Test Page
+            </h1>
         )
     }
 }

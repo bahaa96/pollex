@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from "react-router-dom"
 import Main from "Main"
 import PollPage from "PollPage"
 import Test from "Test"
+import Login from "Login"
 
 export default class Router extends React.Component {
     constructor(props){
@@ -17,6 +18,7 @@ export default class Router extends React.Component {
                         return <PollPage id={match.params.id}/>
                     }}/>
                     <Route path={"/test"} component={Test}/>
+                    <Route path="/login" component={Login}/>
                 </div>
             </BrowserRouter>
         )

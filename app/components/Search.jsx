@@ -1,6 +1,8 @@
 import React from "react"
 import { connect } from "react-redux"
 
+import { setSearchText } from "actions"
+
 class Search extends React.Component {
     constructor(props){
         super(props)
@@ -8,6 +10,7 @@ class Search extends React.Component {
     }
     handleSearch(e){
         e.preventDefault()
+        this.props.dispatch(setSearchText(this.refs.searchText.value))
     }
     render(){
         return (

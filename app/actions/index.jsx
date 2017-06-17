@@ -89,3 +89,10 @@ export let toggleAreTodosLoading = () =>{
         type: "TOGGLE_ARE_TODOS_LOADING"
     }
 }
+
+export let setSearchText = (text) => {
+    return {
+        type: "SET_SEARCH_TEXT",
+        text
+    }
+}

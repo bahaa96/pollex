@@ -1,19 +1,23 @@
 @import "base/variables";
 
-// Bootstrap
+
+/* Bootstrap */
 @import "~bootstrap/scss/bootstrap";
+
+
+/* Components */
 @import "components/header";
 @import "components/polls-list";
 @import "components/add-poll";
 @import "components/search";
 @import "components/poll-page";
 @import "components/delete-modal";
+@import "components/login";
 
-
-// Components
 
 body {
     background: #E9EBEE;
+
 }
 button {
     cursor: pointer;
@@ -23,19 +27,4 @@ button {
 }
 
 
-//@include media-breakpoint-up(sm) {
-//    .poll-data-box h2 {
-//        font-size: 18px;
-//    }
-//}
-//
-//@include media-breakpoint-up(md) {
-//    .poll-data-box h2 {
-//        font-size: 20px;
-//    }
-//}
-//@include media-breakpoint-up(md) {
-//    .poll-data-box h2 {
-//        font-size: 24px;
-//    }
-//}
+

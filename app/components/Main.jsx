@@ -29,6 +29,4 @@ class Main extends React.Component {
     }
 }
 
-export default connect(
-
-)(Main)
+export default connect()(Main)
