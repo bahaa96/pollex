@@ -18,7 +18,7 @@ try {
 }
 
 const extractSass = new ExtractTextPlugin({
-    filename: 'public/bundle.css',
+    filename: 'public/bundle.scss',
     disable: env === "development"
 });
 
