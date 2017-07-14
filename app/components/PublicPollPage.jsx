@@ -101,11 +101,11 @@ class PollPage extends React.Component {
                     </div>
                     <div className="row justify-content-center mt-3">
                         <div className="col-12 col-md-6 share-buttons">
-                            <div className="icon"><a target="_blank" href={`http://www.facebook.com/sharer.php?u=/poll?uid=${ this.uid }&id=${ this.id }`}/><i className="fa fa-facebook fa-2x"/></div>
-                            <div className="icon"><a target="_blank" href={`https://twitter.com/share?url=/poll?uid=${ this.uid }&id=${ this.id }`}/><i className="fa fa-twitter fa-2x"/></div>
-                            <div className="icon"><a target="_blank" href={`https://plus.google.com/share?url=/poll?uid=${ this.uid }&id=${ this.id }`}/><i className="fa fa-google-plus fa-2x"/></div>
-                            <div className="icon"><a target="_blank" href={`http://www.linkedin.com/shareArticle?mini=true&amp;url=/poll?uid=${ this.uid }&id=${ this.id }`}/><i className="fa fa-linkedin fa-2x"/></div>
-                            <CopyToClipboard text={`/poll?uid=${ this.uid }&id=${ this.id }`}
+                            <div className="icon"><a target="_blank" href={`http://www.facebook.com/sharer.php?u=http://still-ocean-97520.herokuapp.com/poll?uid=${ this.uid }&id=${ this.id }`}/><i className="fa fa-facebook fa-2x"/></div>
+                            <div className="icon"><a target="_blank" href={`https://twitter.com/share?url=http://still-ocean-97520.herokuapp.com/poll?uid=${ this.uid }&id=${ this.id }`}/><i className="fa fa-twitter fa-2x"/></div>
+                            <div className="icon"><a target="_blank" href={`https://plus.google.com/share?url=http://still-ocean-97520.herokuapp.com/poll?uid=${ this.uid }&id=${ this.id }`}/><i className="fa fa-google-plus fa-2x"/></div>
+                            <div className="icon"><a target="_blank" href={`http://www.linkedin.com/shareArticle?mini=true&amp;url=http://still-ocean-97520.herokuapp.com/poll?uid=${ this.uid }&id=${ this.id }`}/><i className="fa fa-linkedin fa-2x"/></div>
+                            <CopyToClipboard text={`http://still-ocean-97520.herokuapp.com/poll?uid=${ this.uid }&id=${ this.id }`}
                                              onCopy={ this.copyToClipboard }>
                                 <div className="icon"><a className="copy-to-clipboard" target="_blank" href="#" onClick={ e => e.preventDefault() } data-toggle="tooltip" title="Copied to Clipboard"/><i className="fa fa-link fa-2x"/></div>
                             </CopyToClipboard>

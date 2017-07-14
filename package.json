@@ -6,7 +6,7 @@
   "scripts": {
     "test": "karma start",
     "start": "node server.js",
-    "build": "webpack -p",
+    "postinstall": "webpack -p",
     "serve": "nodemon server.js"
   },
   "author": "Bahaa",

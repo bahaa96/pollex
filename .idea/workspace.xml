@@ -2,44 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="630105f7-3378-4441-8851-46c8a7836b14" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/LocalStorage/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/ControlPolls.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/EditModal.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/NotFound.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/PollPageContentLoader.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/PrivateRoute.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/components/PublicPollPage.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/firebase/api.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/reducers/authReducer.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/reducers/sortReducer.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/styles/components/_error-page.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/Test.jsx" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/reducers/areTodosLoading.jsx" afterPath="$PROJECT_DIR$/app/reducers/arePollsLoading.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/index.jsx" afterPath="$PROJECT_DIR$/app/actions/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.jsx" afterPath="$PROJECT_DIR$/app/app.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/AddPoll.jsx" afterPath="$PROJECT_DIR$/app/components/AddPoll.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/Chart.jsx" afterPath="$PROJECT_DIR$/app/components/Chart.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/DeleteModal.jsx" afterPath="$PROJECT_DIR$/app/components/DeleteModal.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/Header.jsx" afterPath="$PROJECT_DIR$/app/components/Header.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/Login.jsx" afterPath="$PROJECT_DIR$/app/components/Login.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/Main.jsx" afterPath="$PROJECT_DIR$/app/components/Main.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/Poll.jsx" afterPath="$PROJECT_DIR$/app/components/Poll.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/PollPage.jsx" afterPath="$PROJECT_DIR$/app/components/PollPage.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/PollsList.jsx" afterPath="$PROJECT_DIR$/app/components/PollsList.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/firebase/index.js" afterPath="$PROJECT_DIR$/app/firebase/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reducers/index.jsx" afterPath="$PROJECT_DIR$/app/reducers/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reducers/polls.jsx" afterPath="$PROJECT_DIR$/app/reducers/polls.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/router/index.jsx" afterPath="$PROJECT_DIR$/app/router/index.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/store/configureStore.jsx" afterPath="$PROJECT_DIR$/app/store/configureStore.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/PublicPollPage.jsx" afterPath="$PROJECT_DIR$/app/components/PublicPollPage.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/app.scss" afterPath="$PROJECT_DIR$/styles/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/components/_header.scss" afterPath="$PROJECT_DIR$/styles/components/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/components/_login.scss" afterPath="$PROJECT_DIR$/styles/components/_login.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/components/_poll-page.scss" afterPath="$PROJECT_DIR$/styles/components/_poll-page.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/components/_polls-list.scss" afterPath="$PROJECT_DIR$/styles/components/_polls-list.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -70,14 +34,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PublicPollPage.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PublicPollPage.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/components/PublicPollPage.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="97" column="100" lean-forward="false" selection-start-line="97" selection-start-column="100" selection-end-line="97" selection-end-column="100" />
+            <state relative-caret-position="319">
+              <caret line="105" column="148" lean-forward="false" selection-start-line="105" selection-start-column="148" selection-end-line="105" selection-end-column="148" />
+              <caret line="106" column="169" lean-forward="false" selection-start-line="106" selection-start-column="169" selection-end-line="106" selection-end-column="169" />
+              <caret line="104" column="144" lean-forward="false" selection-start-line="104" selection-start-column="144" selection-end-line="104" selection-end-column="144" />
+              <caret line="103" column="151" lean-forward="false" selection-start-line="103" selection-start-column="151" selection-end-line="103" selection-end-column="151" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1363">
+              <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -205,7 +192,6 @@
         <option value="$PROJECT_DIR$/app/app.jsx" />
         <option value="$PROJECT_DIR$/styles/components/_polls-list.scss" />
         <option value="$PROJECT_DIR$/app/components/DeleteModal.jsx" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/components/AddPoll.jsx" />
         <option value="$PROJECT_DIR$/app/components/PrivateRoute.jsx" />
         <option value="$PROJECT_DIR$/app/components/Header.jsx" />
@@ -227,6 +213,7 @@
         <option value="$PROJECT_DIR$/styles/components/_poll-page.scss" />
         <option value="$PROJECT_DIR$/app/components/EditModal.jsx" />
         <option value="$PROJECT_DIR$/app/components/PublicPollPage.jsx" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -759,7 +746,7 @@
       <workItem from="1499970444785" duration="1128000" />
       <workItem from="1499976344751" duration="1206000" />
       <workItem from="1499987181256" duration="4362000" />
-      <workItem from="1500020932177" duration="14651000" />
+      <workItem from="1500020932177" duration="15595000" />
     </task>
     <servers />
   </component>
@@ -775,7 +762,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="709649000" />
+    <option name="totallyTimeSpent" value="710593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -842,13 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1035,13 +1015,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1363">
-          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/LocalStorage/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -1141,14 +1114,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="56" column="23" lean-forward="true" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/components/_poll-page.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -1173,13 +1138,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/components/PublicPollPage.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="97" column="100" lean-forward="false" selection-start-line="97" selection-start-column="100" selection-end-line="97" selection-end-column="100" />
+        <state relative-caret-position="319">
+          <caret line="105" column="148" lean-forward="false" selection-start-line="105" selection-start-column="148" selection-end-line="105" selection-end-column="148" />
+          <caret line="106" column="169" lean-forward="false" selection-start-line="106" selection-start-column="169" selection-end-line="106" selection-end-column="169" />
+          <caret line="104" column="144" lean-forward="false" selection-start-line="104" selection-start-column="144" selection-end-line="104" selection-end-column="144" />
+          <caret line="103" column="151" lean-forward="false" selection-start-line="103" selection-start-column="151" selection-end-line="103" selection-end-column="151" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1363">
+          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
