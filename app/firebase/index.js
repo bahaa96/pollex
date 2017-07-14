@@ -15,4 +15,8 @@ catch (e) {
 
 }
 
-export let firebaseRef = firebase.database().ref()
+export const GithubProvider = new firebase.auth.GithubAuthProvider()
+export const FacebookProvider = new firebase.auth.FacebookAuthProvider()
+export const TwitterProvider = new firebase.auth.TwitterAuthProvider()
+export const firebaseRef = firebase.database().ref().child("users")
+export default firebase

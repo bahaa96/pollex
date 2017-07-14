@@ -1,14 +1,30 @@
 import React from "react"
+import { connect } from "react-redux"
+import { startLogout } from "actions"
+import { getCurrentUser } from "LocalStorage"
 
-export default () =>(
-    <div className="jumbotron">
-        <div className="row justify-content-center">
-            <div className="col-10 col-sm-8 col-md-6">
-                <div className="image-wrapper">
-                    <img className="img-fluid" src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/male3-512.png" />
+export default connect(
+    (state) => {
+        return {
+            auth: state.auth
+        }
+    }
+)( (props) =>{
+    let { displayName, photoURL } = props.auth || getCurrentUser()
+    return (
+        <div className="jumbotron">
+            <div className="row justify-content-center">
+                <div className="col-10 col-sm-8 col-md-6">
+                    <div className="image-wrapper">
+                        <img className="img-fluid" src={ photoURL } alt="User's photo" />
+                    </div>
+                    <h3>{ displayName }</h3>
+                    <span className="lead"><a onClick={(e)=>{
+                        e.preventDefault()
+                        props.dispatch(startLogout())
+                    }}><i className="fa fa-sign-out"/> Logout</a></span>
                 </div>
-                <h3>USER_NAME</h3>
             </div>
         </div>
-    </div>
-)
+    )
+})

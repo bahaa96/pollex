@@ -1,9 +1,14 @@
 import React from "react"
-import {BrowserRouter, Route} from "react-router-dom"
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom"
+
+
+import { history } from "store"
 import Main from "Main"
 import PollPage from "PollPage"
-import Test from "Test"
 import Login from "Login"
+import NotFound from "NotFound"
+import PrivateRoute from "PrivateRoute"
+import PublicPollPage from "PublicPollPage"
 
 export default class Router extends React.Component {
     constructor(props){
@@ -12,16 +17,19 @@ export default class Router extends React.Component {
     render(){
         return (
             <BrowserRouter>
-                <div>
-                    <Route exact path={'/'} component={Main}/>
-                    <Route path={"/poll/:id"} render={({match})=>{
-                        return <PollPage id={match.params.id}/>
-                    }}/>
-                    <Route path={"/test"} component={Test}/>
-                    <Route path="/login" component={Login}/>
-                </div>
+                <Switch>
+                    <Route path={"/test"} render={(props) => <h1>{new URLSearchParams(props.location.search).get("id")}</h1>}/>
+                    <PrivateRoute  path={'/polls'} component={Main} />
+                    <PrivateRoute path={"/me"} component={PollPage}/>
+                    <Route path={"/poll"} component={PublicPollPage} />
+                    <Route path="/login" component={Login} />
+                    <Route exact path={"/"} component={()=>(<div><h1>Home Page</h1><Redirect to={"/login"}/></div>)}/>
+                    <Route component={NotFound}/>
+                </Switch>
             </BrowserRouter>
         )
     }
 }
+
+
 

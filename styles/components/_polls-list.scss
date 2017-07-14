@@ -17,6 +17,10 @@
             cursor: pointer;
             position: relative;
             transition: 0.25s;
+            h4 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
             .data {
                 display: flex;
                 margin: 2.5px 0;

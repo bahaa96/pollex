@@ -1,0 +1,27 @@
+.control-polls {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    li {
+        height: 35px;
+        width: 35px;
+        background: #fff;
+        color: darkgray;
+        border-bottom: 3px solid #dddddd;
+        display: inline-block;
+        padding: 7.5px;
+        margin: 5px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.25s;
+
+        &:hover {
+            color: #0275D8;
+        }
+        &:active {
+            border: 0;
+            transform: translateY(2.5px);
+            color: $badge-primary-bg;
+        }
+    }
+}

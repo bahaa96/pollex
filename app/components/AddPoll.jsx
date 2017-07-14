@@ -1,7 +1,7 @@
 import React from "react"
 import {connect} from "react-redux"
 import moment from "moment"
-
+import uuid from "uuid"
 
 import { startAddPoll } from "actions"
 
@@ -16,10 +16,13 @@ class AddPoll extends React.Component {
         let title=  this.refs.pollTitle.value
         if( title ) {
             let getOptions = ()=>{
-                let out = []
+                let out = {}
                 Array.from(this.refs.options.children).forEach(el => {
                     if (el.value) {
-                        out.push(el.value)
+                        out[uuid()] = {
+                            title: el.value,
+                            votes: 0
+                        }
                     }   
                 })
                 return out
@@ -35,13 +38,18 @@ class AddPoll extends React.Component {
         }else {
 
         }
+        this.refs.pollTitle.value = ""
+        Array.from(this.refs.options.children).forEach(el => {
+            el.value = ""
+        })
 
     }
     addOption(e){
         e.preventDefault()
+        let modal =$("#myModal")
         let input = `<input type="text" class="form-control" placeholder="Write an option"/>`
-        $("#myModal").find(".modal-body form .inputs-group").append(input)
-        $("#myModal").find(".modal-body form .inputs-group input:last-child").focus()
+        modal.find(".modal-body form .inputs-group").append(input)
+        modal.find(".modal-body form .inputs-group input:last-child").focus()
 
     }
     render() {

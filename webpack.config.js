@@ -80,6 +80,8 @@ module.exports = {
             reducers: path.join(__dirname, "app/reducers/index.jsx"),
             actions: path.join(__dirname, "app/actions/index.jsx"),
             store: path.join(__dirname, "app/store/configureStore.jsx"),
+            LocalStorage: path.join(__dirname, "app/LocalStorage/index.js"),
+
         },
         extensions: [" ", ".js", ".jsx"]
     },

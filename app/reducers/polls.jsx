@@ -2,7 +2,6 @@ export default (state = [], action) => {
     switch (action.type) {
         case "ADD_POLLS":
             return [
-                ...state,
                 ...action.polls
             ]
         case "ADD_POLL":
@@ -28,8 +27,6 @@ export default (state = [], action) => {
         case "UP_A_VOTE":
             return state.map(el => {
                 if (el.id === Number(action.pollId)){
-                    console.log(action.optionId)
-                    // console.log(el.options[action.optionId])
                     return {
                         ...el,
                         options: {
@@ -45,6 +42,8 @@ export default (state = [], action) => {
                     return el
                 }
             })
+        case "LOGOUT":
+            return []
         default :
             return state
     }
