@@ -9,6 +9,7 @@ import Login from "Login"
 import NotFound from "NotFound"
 import PrivateRoute from "PrivateRoute"
 import PublicPollPage from "PublicPollPage"
+import HomePage from "HomePage"
 
 export default class Router extends React.Component {
     constructor(props){
@@ -23,7 +24,7 @@ export default class Router extends React.Component {
                     <PrivateRoute path={"/me"} component={PollPage}/>
                     <Route path={"/poll"} component={PublicPollPage} />
                     <Route path="/login" component={Login} />
-                    <Route exact path={"/"} component={()=>(<div><h1>Home Page</h1><Redirect to={"/login"}/></div>)}/>
+                    <Route exact path={"/"} component={HomePage}/>
                     <Route component={NotFound}/>
                 </Switch>
             </BrowserRouter>
