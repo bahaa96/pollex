@@ -5,7 +5,7 @@ export let startAddPolls = ()=>{
     return (dispatch, getState) => {
         dispatch(toggleArePollsLoading())
         let { uid } = getCurrentUser() || getState().auth
-        firebaseRef.child(`${uid}/polls`).once("value").then(snapshot => {
+        return firebaseRef.child(`${ uid }/polls`).once("value").then(snapshot => {
             let polls = snapshot.val()
             if ( polls ) {
                 polls = Object.keys(polls).map(key => {

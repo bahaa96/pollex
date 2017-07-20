@@ -1,9 +1,9 @@
 import React from "react"
-import Poll from "Poll"
-import {connect} from "react-redux"
+import { connect } from "react-redux"
 const sortBy = require("sort-by")
 
 import ContentLoader from "ContentLoader"
+import Poll from "Poll"
 import { startAddPolls } from "actions"
 
 import "jquery-ui/ui/widgets/sortable"
@@ -21,7 +21,8 @@ class PollsList extends React.Component {
             return <ContentLoader/>
         }else {
             if (polls.length) {
-                return polls.filter(el => el.title.includes(searchText.toLowerCase())).sort(sortBy(sortOption)).map((poll, index) => <Poll key={index} {...poll}/>)
+                return polls.filter(el => el.title.includes(searchText.toLowerCase()))
+                    .sort(sortBy(sortOption)).map((poll, index) => <Poll key={index} {...poll}/>)
             }else {
                 return <h2 className="no-polls">No Polls To show</h2>
             }

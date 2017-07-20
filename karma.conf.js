@@ -9,7 +9,7 @@ module.exports = function (config) {
         "node_modules/jquery/dist/jquery.min.js",
         "node_modules/tether/dist/js/tether.min.js",
         "node_modules/bootstrap/dist/js/bootstrap.min.js",
-        'app/tests/**/*.Test.jsx'
+        'app/tests/**/*.test.jsx'
     ],
     preprocessors: {
       'app/tests/**/*.test.jsx': ['webpack', 'sourcemap']
